@@ -1,0 +1,106 @@
+[
+  {
+  "id": 1,
+  "question": "What puzzle is used as an introductory example for reconfiguration?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:03:29"]
+  },
+
+  {
+  "id": 2,
+  "question": "Many reconfiguration problems fall into which complexity class?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:18:14"]
+  },
+
+  {
+  "id": 3,
+  "question": "How many sections did the speaker outline for the talk?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:01:56"]
+  },
+
+  {
+  "id": 4,
+  "question": "From which university is the invited speaker?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:00:08"]
+  },
+
+  {
+  "id": 5,
+  "question": "Which two tiles are reversed in the unsolved 15-puzzle configuration shown by the speaker?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:03:58"]
+  },
+
+  {
+  "id": 6,
+  "question": "What other term does the speaker use for the reconfiguration graph of the 15-puzzle?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:06:06"]
+  },
+  
+  {
+  "id": 7,
+  "question": "What is the “God’s number”?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:07:57"]
+  },
+
+  {
+  "id": 8,
+  "question": "What is the complexity of the recolouring problem for K equals three?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:19:57"]
+  },
+
+  {
+  "id": 9,
+  "question": "Which collaborator on the presented work is the speaker’s master’s student?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:01:46"]
+  },
+
+  {
+  "id": 10,
+  "question": "Why are reconfiguration problems useful in practice, according to the speaker?",
+  "answerable": true,
+  "ground_truth_timestamps": ["00:15:18"]
+  },
+
+  {
+    "id": 11,
+    "question": "What was the exact date of the combinatorial reconfiguration workshop where the joint work began?",
+    "answerable": false,
+    "ground_truth_timestamps": []
+  },
+
+  {
+    "id": 12,
+    "question": "How many participants attended the seminar?",
+    "answerable": false,
+    "ground_truth_timestamps": []
+  },
+
+  {
+    "id": 13,
+    "question": "Which programming language was used to implement the algorithms discussed in the talk?",
+    "answerable": false,
+    "ground_truth_timestamps": []
+  },
+
+  {
+    "id": 14,
+    "question": "Which specific algorithm did the speaker propose to speed up token sliding?",
+    "answerable": false,
+    "ground_truth_timestamps": []
+  },
+
+  {
+    "id": 15,
+    "question": "In which scientific journal were the results of this study published?",
+    "answerable": false,
+    "ground_truth_timestamps": []
+  }
+]

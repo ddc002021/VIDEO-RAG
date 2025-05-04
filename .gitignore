@@ -1,0 +1,12 @@
+.vscode/
+__pycache__/
+.env
+data/video/*
+data/audio/*
+data/keyframes/*
+data/transcripts/*
+data/embeddings/*
+indexes/faiss/*
+indexes/lexical/*
+Assignment 5 (Questions).pdf
+evaluation results.txt

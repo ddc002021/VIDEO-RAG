@@ -1,0 +1,56 @@
+# File Paths
+data_dir: data/
+video_dir: data/video/
+audio_dir: data/audio/
+transcript_dir: data/transcripts/
+keyframe_dir: data/keyframes/
+index_dir: indexes/
+gold_standard_path: data/gold_standard.json
+
+# Data Source
+video_filename: complexity_talk.mp4
+audio_filename: complexity_talk.mp3
+
+# Processing Parameters
+stt_model: 'base' # or 'tiny' or 'small', or 'large'...
+
+segment_duration_sec: 15 
+segmentation_method: 'word_based_sentence' # or word_based or time_based
+
+keyframe_interval_sec: 30
+use_scene_detection: true # whether to use scene detection or not
+scene_change_threshold: 100.0
+
+# Embedding Models 
+text_embedding_model: 'ibm-granite/granite-embedding-125m-english' 
+vision_embedding_model: 'sentence-transformers/clip-ViT-L-14'
+
+# Retrieval Parameters
+top_k_results: 5 # how many results to return from each retriever
+
+# Database Configuration
+db_distance_metric: 'cosine' # distance metric to use for database retrieval
+db_text_table_name: 'text_embeddings' # name of the text table in the database
+db_image_table_name: 'image_embeddings' # name of the image table in the database
+
+# Evaluation Parameters
+eval_k: [1, 3, 5] 
+timestamp_tolerance_sec: 35.0 
+latency_num_runs: 50
+
+relevance_thresholds:
+  FAISS_Text: 0.8   # Cosine similarity threshold (higher is better)
+  FAISS_Image: 0.7    # Cosine similarity threshold (higher is better)
+  TF-IDF: 0.2        # Cosine similarity threshold (higher is better)
+  BM25: 5          # BM25 score threshold (higher is better)
+  pgvector_text: 0.2   # Vector similarity threshold (lower is better)
+  pgvector_image: 0.3 # Vector similarity threshold (lower is better)
+
+
+# relevance_thresholds:
+#   FAISS_Text: 0   # Cosine similarity threshold (higher is better)
+#   FAISS_Image: 0    # Cosine similarity threshold (higher is better)
+#   TF-IDF: 0        # Cosine similarity threshold (higher is better)
+#   BM25: 0       # BM25 score threshold (higher is better)
+#   pgvector_text: 0   # Vector similarity threshold (lower is better)
+#   pgvector_image: 0 # Vector similarity threshold (lower is better)
